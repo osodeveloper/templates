@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+$font: 'Lato', sans-serif;
+
+html, body {
+  font-family: $font;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+.topnav {
+  background-image: linear-gradient(-20deg, #222  0%, #000 100%);
+  border-bottom: 5px solid #222;
+  .nav {
+    .nav-item {
+      .nav-link{
+        color: #fff;
+        padding: 10px 2px;
+        img.avatar {
+          $medidas:25px;
+          height: $medidas;
+          width: $medidas;
+          object-fit: cover;
+          object-position: center;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
