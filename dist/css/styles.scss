@@ -3,27 +3,43 @@ $font: 'Lato', sans-serif;
 
 html, body {
   font-family: $font;
+  background-color: #f4f4f4;
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 .topnav {
-  background-image: linear-gradient(-20deg, #222  0%, #000 100%);
-  border-bottom: 5px solid #222;
-  .nav {
-    .nav-item {
-      .nav-link{
-        color: #fff;
-        padding: 10px 2px;
-        img.avatar {
-          $medidas:25px;
-          height: $medidas;
-          width: $medidas;
-          object-fit: cover;
-          object-position: center;
-          border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  .topnav-navbar {
+    background-image: linear-gradient(-20deg, #222  0%, #000 100%);
+    .nav {
+      .nav-item {
+        .nav-link{
+          color: #fff;
+          padding: 10px 2px;
+          img.avatar {
+            $medidas:25px;
+            height: $medidas;
+            width: $medidas;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 50%;
+          }
         }
       }
     }
   }
+}
+
+.container-body {
+  margin-top: 60px;
+  padding: 15px;
+  background-color: #fff;
+}
+
+.dropdown-menu {
+  font-size: 14px;
 }
