@@ -3,6 +3,9 @@ html, body {
   font-family: "Lato", sans-serif;
   background-color: #f4f4f4; }
 
+*, *:before, *:after {
+  box-sizing: border-box; }
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0; }
 
@@ -10,6 +13,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: 0;
   left: 0;
+  border-bottom: 4px solid #2686d5;
   z-index: 1000; }
   .topnav .topnav-navbar {
     background-image: linear-gradient(-20deg, #222 0%, #000 100%); }
@@ -23,12 +27,68 @@ h1, h2, h3, h4, h5, h6 {
         object-position: center;
         border-radius: 50%; }
 
+.sidebar {
+  background-image: linear-gradient(to top, #222 0%, #000 100%);
+  position: fixed;
+  left: 0;
+  top: 50px;
+  width: 250px;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  transform: translate3d(-250px, 0, 0);
+  transition: transform .3s; }
+  .sidebar.isOpen {
+    transform: translate3d(0px, 0, 0); }
+  .sidebar::-webkit-scrollbar-track {
+    background: #2A363D; }
+  .sidebar::-webkit-scrollbar {
+    width: 5px;
+    background: #2A363D; }
+  .sidebar::-webkit-scrollbar-thumb {
+    background: #2A363D; }
+  .sidebar .nav-title {
+    font-size: 14px;
+    color: #fff;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    margin: 0px 5px;
+    padding: 5px 0px;
+    width: 100%;
+    display: block;
+    text-decoration: none; }
+  .sidebar .nav-link {
+    padding: 8px 5px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    text-transform: capitalize; }
+    .sidebar .nav-link i {
+      padding: 0px 8px; }
+    .sidebar .nav-link.active {
+      color: #fff; }
+      .sidebar .nav-link.active i {
+        color: #2686d5; }
+    .sidebar .nav-link:hover {
+      background-color: rgba(64, 64, 64, 0.5); }
+
 .container-body {
   margin-top: 60px;
   padding: 15px;
   background-color: #fff; }
 
 .dropdown-menu {
-  font-size: 14px; }
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  font-size: 14px;
+  border-radius: 0px;
+  border: none;
+  box-shadow: 0px 0px 4px #c3cfe2; }
+  .dropdown-menu::after {
+    position: absolute;
+    top: -6px;
+    right: 20px;
+    display: inline-block;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #c3cfe2;
+    border-left: 6px solid transparent;
+    content: ''; }
 
 /*# sourceMappingURL=all.css.map */
