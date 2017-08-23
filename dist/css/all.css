@@ -188,7 +188,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 30px;
     font-weight: 700; }
 .container-business .business-image {
-  background-color: #d9d9d9; }
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%); }
   .container-business .business-image .business-box-image {
     background-color: #fafafa;
     margin: 0px 15px; }
@@ -232,5 +232,65 @@ h1, h2, h3, h4, h5, h6 {
         color: #fff; }
       .container-business .business-image .business-links .nav-link.www {
         color: #df4a32; }
+.container-business .business-nav .breadcrumb {
+  background-color: #fff;
+  font-weight: 700;
+  margin: 5px 0px;
+  border-bottom: 1px solid #e6e6e6;
+  border-width: medium; }
+  .container-business .business-nav .breadcrumb .breadcrumb-item::before {
+    content: "-"; }
+  .container-business .business-nav .breadcrumb .breadcrumb-item:nth-child(1)::before {
+    content: ""; }
+.container-business .business-info .info-item {
+  border-top: 2px solid #e6e6e6;
+  margin: 5px 0px;
+  padding: 5px 0px; }
+  .container-business .business-info .info-item:nth-child(1) {
+    border-top: none; }
+  .container-business .business-info .info-item .info-field {
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 5px; }
+  .container-business .business-info .info-item .info-desc {
+    color: #333;
+    font-size: 14px; }
+    .container-business .business-info .info-item .info-desc p {
+      margin: 0; }
+    .container-business .business-info .info-item .info-desc a {
+      text-decoration: none; }
+    .container-business .business-info .info-item .info-desc i {
+      color: #2686d5;
+      padding: 0px 5px; }
+    .container-business .business-info .info-item .info-desc .badge {
+      font-size: 14px;
+      color: #2686d5;
+      border-radius: 0%;
+      border: 1px solid #2686d5;
+      margin-right: 4px;
+      font-weight: 400;
+      padding: 4px 6px;
+      transition: all .3s; }
+      .container-business .business-info .info-item .info-desc .badge:hover {
+        color: #fff;
+        background-color: #2686d5; }
+.container-business .business-share h1 {
+  color: #2686d5; }
+.container-business .business-share a {
+  width: 40px;
+  height: 40px;
+  padding: 0px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  transition: all .3s;
+  margin: 0px 5px;
+  transition: all .3s; }
+  .container-business .business-share a:hover {
+    box-shadow: 1px 1px 4px #a6a6a6; }
 
 /*# sourceMappingURL=all.css.map */

@@ -234,7 +234,7 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
   .business-image {
-    background-color: darken(#fff, 15%);
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
     .business-box-image {
       background-color: darken(#fff, 2%);
       margin: 0px 15px;
@@ -289,6 +289,89 @@ h1, h2, h3, h4, h5, h6 {
         &.www {
           color: #df4a32;
         }
+      }
+    }
+  }
+  .business-nav {
+    .breadcrumb {
+      background-color: #fff;
+      font-weight: 700;
+      margin: 5px 0px;
+      border-bottom: 1px solid darken(#fff, 10%);
+      border-width: medium;
+      .breadcrumb-item {
+        &::before {
+          content: "-";
+        }
+        &:nth-child(1)::before {
+          content: "";
+        }
+      }
+    }
+  }
+  .business-info {
+    .info-item {
+      border-top: 2px solid darken(#fff, 10%);
+      margin: 5px 0px;
+      padding: 5px 0px;
+      &:nth-child(1) {
+        border-top: none;
+      }
+      .info-field {
+        font-weight: 700;
+        text-transform: capitalize;
+        margin-bottom: 5px;
+      }
+      .info-desc {
+        color: #333;
+        font-size: 14px;
+        p {
+          margin: 0;
+        }
+        a {
+          text-decoration: none;
+        }
+        i {
+          color: #2686d5;
+          padding: 0px 5px;
+        }
+        .badge {
+          font-size: 14px;
+          color: #2686d5;
+          border-radius: 0%;
+          border: 1px solid #2686d5;
+          margin-right: 4px;
+          font-weight: 400;
+          padding: 4px 6px;
+          transition: all .3s;
+          &:hover {
+            color: #fff;
+            background-color: #2686d5;
+          }
+        }
+      }
+    }
+  }
+  .business-share {
+    h1 {
+      color: #2686d5;
+    }
+    a {
+      width: 40px;
+      height: 40px;
+      padding: 0px;
+      border-radius: 50%;
+      background-color: #fff;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      transition: all .3s;
+      margin: 0px 5px;
+      transition: all .3s;
+      &:hover {
+        box-shadow: 1px 1px 4px darken(#fff, 35%);
       }
     }
   }
