@@ -4,7 +4,8 @@ html, body {
   background-color: #f4f4f4; }
 
 *, *:before, *:after {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  word-wrap: break-word; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0; }
@@ -72,6 +73,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .container-body {
   margin-top: 60px;
+  box-sizing: border-box; }
+
+.white {
+  background-color: #fff;
   padding: 15px; }
 
 .dropdown-menu {
@@ -112,16 +117,120 @@ h1, h2, h3, h4, h5, h6 {
     object-fit: cover;
     object-position: center; }
   .business .business-info {
-    padding: 5px 10px;
+    padding: 10px 15px;
     background-color: #fff; }
     .business .business-info h3 {
       font-size: 20px; }
-    .business .business-info .business-link {
-      text-decoration: none;
-      font-weight: 700; }
-    .business .business-info .business-state {
+      .business .business-info h3 .business-link {
+        text-decoration: none; }
+    .business .business-info .business-desc {
+      margin: 0; }
+
+.business-state {
+  font-size: 18px;
+  margin: 3px 0px;
+  color: #d9d9d9; }
+  .business-state.is-open {
+    color: #43e97b; }
+
+.event {
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 5px #d9d9d9;
+  background-color: #fff;
+  min-height: 200px;
+  max-height: 200px; }
+  .event .event-cover-page {
+    padding-right: 0px; }
+    .event .event-cover-page img {
+      height: 200px;
+      width: 100%;
+      object-fit: cover;
+      object-position: center; }
+  .event .event-info {
+    margin-left: -5px;
+    padding: 10px 10px 10px 0px; }
+    .event .event-info h3 {
+      display: block;
+      /* Fallback for non-webkit */
+      display: -webkit-box;
       font-size: 18px;
-      margin: 3px 0px;
-      color: #d9d9d9; }
+      max-height: 150px;
+      margin: 0 auto;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 5px;
+      color: #007bff; }
+      .event .event-info h3 .event-link {
+        text-decoration: none; }
+    .event .event-info p {
+      margin: 5px 0px;
+      font-size: 14px;
+      display: block;
+      /* Fallback for non-webkit */
+      display: -webkit-box;
+      max-height: 40px;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+      .event .event-info p i {
+        padding: 0px 5px; }
+
+.container-business .breadcrumb {
+  padding: 2px 10px;
+  background-color: #fafafa;
+  border-radius: 0%; }
+.container-business .business-name {
+  padding: 0px 15px; }
+  .container-business .business-name h1 {
+    font-size: 30px;
+    font-weight: 700; }
+.container-business .business-image {
+  background-color: #d9d9d9; }
+  .container-business .business-image .business-box-image {
+    background-color: #fafafa;
+    margin: 0px 15px; }
+    .container-business .business-image .business-box-image img {
+      max-height: 400px; }
+  .container-business .business-image p {
+    margin: 0;
+    padding: 0px 10px; }
+  .container-business .business-image .business-links {
+    padding: 0px 10px 10px 10px; }
+    .container-business .business-image .business-links .nav-item {
+      margin: 2px 5px; }
+    .container-business .business-image .business-links .nav-link {
+      width: 40px;
+      height: 40px;
+      padding: 0px;
+      border-radius: 50%;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      transition: all .3s; }
+      .container-business .business-image .business-links .nav-link:hover {
+        box-shadow: 1px 1px 4px #a6a6a6;
+        transition: all .3s; }
+      .container-business .business-image .business-links .nav-link.facebook {
+        background-color: #3b5998;
+        color: #fff; }
+      .container-business .business-image .business-links .nav-link.twitter {
+        background-color: #00b6f1;
+        color: #fff; }
+      .container-business .business-image .business-links .nav-link.youtube {
+        background-color: #b31217;
+        color: #fff; }
+      .container-business .business-image .business-links .nav-link.googleplus {
+        background-color: #df4a32;
+        color: #fff; }
+      .container-business .business-image .business-links .nav-link.instagram {
+        background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+        color: #fff; }
+      .container-business .business-image .business-links .nav-link.www {
+        color: #df4a32; }
 
 /*# sourceMappingURL=all.css.map */
